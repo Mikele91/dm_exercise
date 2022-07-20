@@ -1,19 +1,19 @@
 <template>
 
-    <div class=" login_container col-lg-6 col-md-5">
+    <div class="login_container col-lg-6 col-md-5">
         <div class="logo">
             <img src="../assets/img/logo.jpg" alt="">
         </div>
-        <div class=" login_card d-flex aling-item-center justify-content-center">
-            <div class="form_body ">
+        <div class="login_card d-flex aling-item-center justify-content-center">
+            <div class="form_body">
                 <h1> Welcome back, Olivia</h1>
                 <p>Welcome back! Please enter your details.</p>
 
                 <div class="button_google btn"> 
-                    <img class="img_google" src="../assets/img/google.svg" alt="google">
-                    <span class="px-2 ">Log in with Google</span>
+                    <img class="img_google" src="../assets/img/google.svg" alt="google_img">
+                    <span class="px-2">Log in with Google</span>
                 </div>
-
+                
                 <div class="d-flex align-items-center my-3">
                     <hr class="hr_line"> 
                     <span class="px-2">or</span> 
@@ -131,14 +131,11 @@ export default {
                 padding: 0 .3125rem;
             }       
         }
-        
         .logo{
             img{
                 height: 4rem;
             }
         }
-        
-        
         .button_login{
             padding: 1.25rem 0;
             button{

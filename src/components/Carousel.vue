@@ -1,7 +1,7 @@
 <template>
     
-    <div class="col-lg-6 col-md-7  d-none d-md-block h-100  carousel_container" :style="`background-image: url(${bgImage[count]})`">   
-        <div class="card_container " >   
+    <div class="carousel_container col-lg-6 col-md-7 d-none d-md-block h-100" :style="`background-image: url(${bgImage[count]})`">   
+        <div class="card_container">   
             <div class="text_img">
                 We move 10x faster than our peers and syau consistent. While they're bogged down with design debt,<br>
                 we're relasing new features.
@@ -11,7 +11,7 @@
                     Sophie Hall
                 </div>
                 <div class="star_container">
-                    <img  v-for="i in 5" :key="i" src="../assets/img/star.svg" alt="">
+                    <img  v-for="i in 5" :key="i" src="../assets/img/star.svg" alt="star.svg">
                 </div>
             </div>
             <div class=" d-flex justify-content-between align-items-center">
@@ -46,8 +46,7 @@ export default {
         nextImg(){
             this.count++
             if( this.count >= this.bgImage.length){
-                this.count = 0;              
-                
+                this.count = 0;                             
             }
         },
         prevImg(){
@@ -70,7 +69,6 @@ export default {
         overflow-y: auto;
         background-size: cover;
         background-position:center ;
-    
         .card_container{
             display: flex;
             flex-direction: column;
@@ -82,7 +80,6 @@ export default {
             background-position:center ;
             padding: 2rem 3.125rem;
             .text_img,#name_img{
-                
                 font-size: 1.5rem;
                 font-weight: 400;
                 text-align: start;
@@ -90,11 +87,9 @@ export default {
             .star_container{
                 img{
                     width:1.25rem; 
-                    
                 } 
             }
             .arrow{
-
                 border: 1px solid white;
                 border-radius: 50%;
                 width: 3rem;
@@ -110,11 +105,9 @@ export default {
                 span:last-child{
                 font-weight: 300;
                 font-size: .65rem;
-
                 }
             }
         }
     }
-
 </style>
 
