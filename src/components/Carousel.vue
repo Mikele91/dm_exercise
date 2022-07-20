@@ -21,8 +21,8 @@
                     <span>Web Design Agency</span>
                 </div>
                 <div id="arrows_box">
-                    <img @click="nextImg(), stop()" class="arrow" src="../assets/img/arrow-l.svg" alt="">
-                    <img @click="prevImg(), stop()" class="arrow  ms-4" src="../assets/img/arrow-r.svg" alt="">
+                    <img @click="prevImg(), stop()" class="arrow" src="../assets/img/arrow-l.svg" alt="">
+                    <img @click="nextImg(), stop()" class="arrow  ms-4" src="../assets/img/arrow-r.svg" alt="">
                 </div>
             </div>
         </div>
@@ -40,26 +40,27 @@ export default {
         }
     },
     mounted: function() {
-        this.time=setInterval(()=>this.nextImg() , 5000);
+        this.time=setInterval(()=>this.nextImg() , 2000);
     },
     methods:{
         nextImg(){
-            this.count++;
+            this.count++
             if( this.count >= this.bgImage.length){
-                this.count = 0;  
+                this.count = 0;              
+                
             }
         },
         prevImg(){
             this.count--;
             if(this.count == -1){
-                this.count = this.bgImage.length-1;
+                this.count = this.bgImage.length-1; 
             }
         },
         stop: function() {
             clearInterval(this.time);
-            this.time=setInterval(()=>this.nextImg() , 5000);
-        },
-    },
+            this.time=setInterval(()=>this.nextImg() , 2000);
+        }
+    }
 }
 </script>
 
