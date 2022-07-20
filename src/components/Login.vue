@@ -30,7 +30,7 @@
                         <input class="w-100" type="password" placeholder="Password" id="form_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required >
                     </div>
                     <div class="remember_help  w-100 text-start align-items-center d-flex justify-content-between">
-                        <div class="align-items-center d-flex">
+                        <div class="align-items-center d-flex mx-2">
                             <input type="checkbox" id="remember_check" name="remember_check" value="Remember">
                             <label class="ps-2" for="remember_check"> Remember for 30 days</label>
                         </div>
@@ -126,7 +126,7 @@ export default {
                 padding: .5rem;
             }
             .remember_help{
-                font-size: .75rem;
+                font-size: .65rem;
                 padding: 0 .3125rem;
             }       
         }
