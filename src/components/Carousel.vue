@@ -40,7 +40,7 @@ export default {
         }
     },
     mounted: function() {
-        this.time=setInterval(()=>this.nextImg() , 2000);
+        this.time=setInterval(()=>this.nextImg() , 5000);
     },
     methods:{
         nextImg(){
@@ -57,7 +57,7 @@ export default {
         },
         stop: function() {
             clearInterval(this.time);
-            this.time=setInterval(()=>this.nextImg() , 2000);
+            this.time=setInterval(()=>this.nextImg() , 5000);
         }
     }
 }
