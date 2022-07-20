@@ -57,6 +57,8 @@ export default {
 
 <style lang="scss" scoped>
     .carousel_container{
+        height: 100%;
+        overflow-y: auto;
         background-size: cover;
         background-position:center ;
     }

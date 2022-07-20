@@ -62,6 +62,7 @@ export default {
 
 <style lang="scss" scoped>
     .login_container{
+            overflow-y: auto;
             height: 100%;
             display: flex;
             flex-direction: column;
